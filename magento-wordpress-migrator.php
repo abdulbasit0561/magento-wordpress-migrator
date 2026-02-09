@@ -11,7 +11,7 @@
  * Text Domain: magento-wordpress-migrator
  * Domain Path: /languages
  * Requires at least: 6.4
- * Requires PHP: 7.4
+ * Requires PHP: 8.0
  * WC requires at least: 8.0
  * WC tested up to: 10.4
  * Woo: 9900200-9900299:9900400-9900499
@@ -29,7 +29,7 @@ define('MWM_VERSION', '1.1.0');
 define('MWM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MWM_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MWM_PLUGIN_BASENAME', plugin_basename(__FILE__));
-define('MWM_MIN_PHP_VERSION', '7.4');
+define('MWM_MIN_PHP_VERSION', '8.0');
 define('MWM_MIN_WP_VERSION', '5.8');
 
 /**

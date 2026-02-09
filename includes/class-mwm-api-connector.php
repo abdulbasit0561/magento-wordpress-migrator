@@ -87,10 +87,10 @@ class MWM_API_Connector {
             error_log('MWM API Connector Constructor:');
             error_log('  Store URL: ' . $this->store_url);
             error_log('  API Version: ' . $this->api_version);
-            error_log('  Consumer Key: ' . substr($this->consumer_key, 0, 8) . '...' . substr($this->consumer_key, -4));
-            error_log('  Consumer Secret Length: ' . strlen($this->consumer_secret));
-            error_log('  Access Token: ' . substr($this->access_token, 0, 8) . '...' . substr($this->access_token, -4));
-            error_log('  Access Token Secret Length: ' . strlen($this->access_token_secret));
+            error_log('  Consumer Key: ' . substr($this->consumer_key ?? '', 0, 8) . '...' . substr($this->consumer_key ?? '', -4));
+            error_log('  Consumer Secret Length: ' . strlen($this->consumer_secret ?? ''));
+            error_log('  Access Token: ' . substr($this->access_token ?? '', 0, 8) . '...' . substr($this->access_token ?? '', -4));
+            error_log('  Access Token Secret Length: ' . strlen($this->access_token_secret ?? ''));
         }
     }
 
